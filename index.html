@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    
+    <div id="main"></div>
+    <script type="text/babel">
+        let div = document.getElementById("main");
+        let myStyle = {
+            textAlign: "center",
+            color: "#ffffff",
+            backgroundColor: "#1a1a1a",
+            padding: "20px",
+            fontFamily: "Arial"
+        };
+        let imgStyle = {
+            display: "block",
+            width: "300px",
+            margin: "10px auto"
+            
+        };
+
+        const root= ReactDOM.createRoot(div);
+        root.render(
+    <div style = {myStyle}>
+        <img src="https://www.waste.org/chemlab/chemword.gif" alt="chemlab logo" />
+        <h3>Genre</h3>
+        <p>Industrial Rock, Electronic Body Music</p>
+        <h3>Members</h3>
+            <p>Dylan Thomas Moore</p>
+            <p>Charles Levic</p>
+            <p>Jared Louche</p>
+            <p>Ned Wahl</p>
+        
+        <h3>Top Albums(imho)</h3>
+        <img src="https://i.scdn.co/image/ab67616d0000b273c21bf09af1a9b3b9a3d421f0" alt="ESM Album" style ={imgStyle} />
+        <p>East Side Militia (1996)</p>
+        <img src="https://i.scdn.co/image/ab67616d0000b273edd0729738b430bfd052f645" alt="S Album" style ={imgStyle} />
+        <p>Suture (2000)</p>
+        <img src="https://i.scdn.co/image/ab67616d0000b2730c5aa89ea42d96da81fb7a94" alt="O Album" style ={imgStyle} />
+        <p>Oxidizer (2004)</p>
+       
+    </div>
+        )
+    </script>
+</body>
+</html>
